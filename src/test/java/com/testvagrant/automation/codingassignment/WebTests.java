@@ -44,14 +44,17 @@ public class WebTests extends WebTestBase{
     	String webURL = TestProperties.getProperty("WebURL");
     	String cityName = TestProperties.getProperty("CityName");
      	
-     	
-     	homePage.openURL(webURL);
-     	homePage.navigateToWeather();
+    	homePage.openURL(webURL)
+    		.closePopUpNotification()
+    		.navigateToWeather();
      	
      	if(weatherPage.pageLoadCheck())
      	{
      		weatherPage.searchCity(cityName);
-     		weatherPage.fetchDetailsFromMap(cityName);
+     		if(weatherPage.fetchDetailsFromMap(cityName))
+     			extentTest.info("City Weather details displayed on Map");
+     		else
+     			extentTest.fail("Weather details not displayed");
      	}
     	else
     		extentTest.fail("Weather page is not displayed");

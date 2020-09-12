@@ -72,7 +72,7 @@ public class WeatherPage extends BasePageObject{
 	}
 	
 	
-	public void fetchDetailsFromMap(String cityName)
+	public Boolean fetchDetailsFromMap(String cityName)
 	{
 		cityWeatherDetails = new HashMap<String, Object>();		
 		cityWeatherDetails.put("CityName", cityName);
@@ -100,12 +100,18 @@ public class WeatherPage extends BasePageObject{
 				
 				humidityText = humidityText.replaceAll("[^\\d]", "");
 				cityWeatherDetails.put("Humidity", humidityText);	
+				return true;
+			}			
+			else
+			{
+				return false;
 			}
 				
 		}
 		else
 		{
 			System.out.println("Couldn't find City " + cityName + " in Map");
+			return false;
 		}
 			
 	}
