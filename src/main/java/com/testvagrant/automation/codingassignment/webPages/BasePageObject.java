@@ -1,4 +1,4 @@
-package com.testvagrant.automation.codingassignment.webPages;
+package com.testvagrant.automation.codingassignment.webpages;
 
 
 import org.openqa.selenium.By;
@@ -6,8 +6,9 @@ import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 /**
- * Hello world!
+ * Base class for Web application page classes
  *
  */
 public class BasePageObject {

@@ -6,6 +6,11 @@ import org.testng.annotations.BeforeMethod;
 
 import com.aventstack.extentreports.ExtentTest;
 
+
+/**
+ * Initializes reporting and other resources for API test cases
+ *
+ */
 public class ApiTestBase extends TestBase{
 	protected ExtentTest extentTest;
 	
@@ -18,7 +23,7 @@ public class ApiTestBase extends TestBase{
 	
 	@AfterMethod(alwaysRun=true)
 	public void tearDown() {
-		extentTest.pass("Test completed sussessfully.");
+		extentTest.info("Test completed.");
 	}
 
 }

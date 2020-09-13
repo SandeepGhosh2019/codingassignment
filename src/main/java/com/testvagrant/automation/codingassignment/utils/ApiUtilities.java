@@ -12,7 +12,10 @@ import org.json.JSONObject;
 
 import io.restassured.response.Response;
 
-
+/**
+ * Utilities for various operations on API response
+ *
+ */
 public class ApiUtilities {
 
 	

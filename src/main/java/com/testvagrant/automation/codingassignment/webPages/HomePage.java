@@ -1,10 +1,10 @@
-package com.testvagrant.automation.codingassignment.webPages;
+package com.testvagrant.automation.codingassignment.webpages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 /**
- * Hello world!
+ * Page class for Home page of news website
  *
  */
 public class HomePage extends BasePageObject{

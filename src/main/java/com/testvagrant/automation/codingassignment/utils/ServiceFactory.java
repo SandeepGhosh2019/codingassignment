@@ -6,7 +6,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 /**
- * Hello world!
+ * Template structures to get response from various types of API requests
  *
  */
 public class ServiceFactory {

@@ -1,22 +1,20 @@
 package com.testvagrant.automation.codingassignment;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.testvagrant.automation.codingassignment.base.WebTestBase;
 import com.testvagrant.automation.codingassignment.utils.TestProperties;
-import com.testvagrant.automation.codingassignment.webPages.HomePage;
-import com.testvagrant.automation.codingassignment.webPages.WeatherPage;
+import com.testvagrant.automation.codingassignment.webpages.HomePage;
+import com.testvagrant.automation.codingassignment.webpages.WeatherPage;
+
 /**
- * Hello world!
+ * Test class for Web only test cases
  *
  */
 public class WebTests extends WebTestBase{
 
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
+
     @Test
 	public void searchWeatherOfACityInWebsite()
     {
@@ -37,7 +35,10 @@ public class WebTests extends WebTestBase{
     		weatherPage.findCityInMap(cityName);
     	}
     	else
+    	{
     		extentTest.fail("Weather page is not displayed");
+    		Assert.fail();
+    	}
 
     }
     
@@ -60,10 +61,17 @@ public class WebTests extends WebTestBase{
      		if(weatherPage.fetchDetailsFromMap(cityName))
      			extentTest.info("City Weather details displayed on Map");
      		else
+     		{
      			extentTest.fail("Weather details not displayed");
+     			Assert.fail();
+     		}
+
      	}
     	else
+    	{
     		extentTest.fail("Weather page is not displayed");
+    		Assert.fail();
+    	}
 
      }
 

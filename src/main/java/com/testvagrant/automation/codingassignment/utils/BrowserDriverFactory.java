@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
- * Hello world!
+ * Create web drivers for various browsers
  *
  */
 public class BrowserDriverFactory {

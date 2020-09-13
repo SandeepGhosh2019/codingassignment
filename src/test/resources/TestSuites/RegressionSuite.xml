@@ -34,12 +34,32 @@
 			</class>
 		</classes>
 	</test> <!-- Test -->
-	<test name="CompareWeatherFromTwoSources">
+	<test name="CompareTemperatureFromTwoSources">
 		<classes>
 			<class
 				name="com.testvagrant.automation.codingassignment.ComparisionTests">
 				<methods>
 					<include name="compareTemperatureFromTwoSources" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="CompareTemperatureFromTwoSourcesWithVariance">
+		<classes>
+			<class
+				name="com.testvagrant.automation.codingassignment.ComparisionTests">
+				<methods>
+					<include name="compareTemperatureFromTwoSourcesWithVariance" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="CompareHumidityFromTwoSourcesWithVariance">
+		<classes>
+			<class
+				name="com.testvagrant.automation.codingassignment.ComparisionTests">
+				<methods>
+					<include name="compareHumidityFromTwoSourcesWithVariance" />
 				</methods>
 			</class>
 		</classes>

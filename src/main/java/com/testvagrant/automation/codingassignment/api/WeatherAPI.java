@@ -7,6 +7,10 @@ import io.restassured.response.Response;
 
 import static com.testvagrant.automation.codingassignment.utils.ApiUtilities.*;
 
+/**
+ * Weather API specific operations
+ *
+ */
 public class WeatherAPI {
 	Map<String, Object>  cityWeatherDetails;
 	

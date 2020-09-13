@@ -10,6 +10,10 @@ import com.aventstack.extentreports.ExtentTest;
 import com.testvagrant.automation.codingassignment.utils.BrowserDriverFactory;
 import com.testvagrant.automation.codingassignment.utils.TestProperties;
 
+/**
+ * Initializes reporting and other resources for web test cases
+ *
+ */
 public class WebTestBase extends TestBase {
 	protected WebDriver driver;
 	protected ExtentTest extentTest;
@@ -29,6 +33,6 @@ public class WebTestBase extends TestBase {
 	public void tearDown() {
 		//Closing browser
 		driver.quit();
-		extentTest.pass("Test completed sussessfully.");
+		extentTest.info("Test completed.");
 	}
 }

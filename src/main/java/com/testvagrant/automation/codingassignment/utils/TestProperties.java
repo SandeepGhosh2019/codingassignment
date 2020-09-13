@@ -3,8 +3,9 @@ package com.testvagrant.automation.codingassignment.utils;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+
 /**
- * Hello world!
+ * Reads properties file
  *
  */
 public class TestProperties {

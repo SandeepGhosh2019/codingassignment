@@ -6,6 +6,10 @@ import org.testng.annotations.BeforeSuite;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
+/**
+ * Initializes reporting and other resources for whole suite
+ *
+ */
 public class TestBase {
 	
 	public static ExtentReports extentReport;

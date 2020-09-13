@@ -1,4 +1,4 @@
-package com.testvagrant.automation.codingassignment.webPages;
+package com.testvagrant.automation.codingassignment.webpages;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 /**
- * Hello world!
+ * Page class for Weather page of news website
  *
  */
 public class WeatherPage extends BasePageObject{
@@ -89,8 +89,7 @@ public class WeatherPage extends BasePageObject{
 			System.out.println("City is displayed in Map");
 			driver.findElement(cityNameInMap).click();
 			if(isElementPresent(2, weatherDetails))
-			{
-//				System.out.println(driver.findElement(weatherDetails).getText());				
+			{			
 				temperatureText = driver.findElement(weatherDetails)
 						.findElement(temperatureInDegree).getText();
 				

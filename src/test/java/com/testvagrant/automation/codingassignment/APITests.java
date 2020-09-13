@@ -16,7 +16,10 @@ import com.testvagrant.automation.codingassignment.utils.TestProperties;
 import io.restassured.response.Response;
 
 
-
+/**
+ * Test class for API only test cases
+ *
+ */
 public class APITests extends ApiTestBase{
 	
     @Test
