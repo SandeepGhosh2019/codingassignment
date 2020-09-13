@@ -4,13 +4,13 @@ Test Vagrant Coding Assignment
 ## Setup
  Download the project in folder
  Open command prompt in the root folder
- Run command "mvn compile"
+ Run command "mvn install"
  
  
 ## Execution
  Modify the parameters in "Config.properties" file (if required)
  Open command prompt in the root folder
- Run command "mvn test"
+ Run command "mvn test -PRegression"
  
  
 ## Results
