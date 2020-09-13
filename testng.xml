@@ -34,4 +34,14 @@
 			</class>
 		</classes>
 	</test> <!-- Test -->
+	<test name="CompareWeatherFromTwoSources">
+		<classes>
+			<class
+				name="com.testvagrant.automation.codingassignment.ComparisionTests">
+				<methods>
+					<include name="compareTemperatureFromTwoSources" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
