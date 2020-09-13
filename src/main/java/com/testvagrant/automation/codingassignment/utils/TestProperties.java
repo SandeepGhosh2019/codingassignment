@@ -3,7 +3,10 @@ package com.testvagrant.automation.codingassignment.utils;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
-
+/**
+ * Hello world!
+ *
+ */
 public class TestProperties {
 	
 	private static Properties properties = new Properties();
@@ -11,8 +14,7 @@ public class TestProperties {
 	static {
 		try {
 			
-				FileInputStream in = null;
-				in = new FileInputStream("Config.properties");
+				FileInputStream in = new FileInputStream("Config.properties");
 				properties.load(in);
 				in.close();
 

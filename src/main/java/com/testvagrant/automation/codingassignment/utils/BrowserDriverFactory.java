@@ -1,20 +1,20 @@
 package com.testvagrant.automation.codingassignment.utils;
 
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+/**
+ * Hello world!
+ *
+ */
 public class BrowserDriverFactory {
 	private WebDriver driver;
-	private Logger logger;
 	
-	public BrowserDriverFactory(Logger logger) {
-		this.logger = logger;
+	public BrowserDriverFactory() {
 	}
 
 
 	public WebDriver getDriver(String browserType) {
-		logger.info("Create browser " + browserType);
 		String webDriverPath = System .getProperty("user.dir") +  "\\WebDrivers\\";
 		
 		switch (browserType.toUpperCase()) {

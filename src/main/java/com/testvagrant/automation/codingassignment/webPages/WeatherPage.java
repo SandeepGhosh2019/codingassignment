@@ -3,11 +3,13 @@ package com.testvagrant.automation.codingassignment.webPages;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-
+/**
+ * Hello world!
+ *
+ */
 public class WeatherPage extends BasePageObject{
 	
 	Map<String, Object>  cityWeatherDetails;
@@ -21,8 +23,8 @@ public class WeatherPage extends BasePageObject{
 	By humidity = By.xpath("div/div/span[3]/b");
 	
 	
-	public WeatherPage(WebDriver driver, Logger logger) {
-		super(driver, logger);
+	public WeatherPage(WebDriver driver) {
+		super(driver);
 	}
 	
 	public Map<String, Object> getCityWeatherDetails() {

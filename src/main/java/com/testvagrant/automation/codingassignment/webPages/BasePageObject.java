@@ -1,20 +1,21 @@
 package com.testvagrant.automation.codingassignment.webPages;
 
-import org.apache.logging.log4j.Logger;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+/**
+ * Hello world!
+ *
+ */
 public class BasePageObject {
 	
 	protected WebDriver driver;
-	protected Logger logger;
 
-	public BasePageObject(WebDriver driver, Logger logger) {
+	public BasePageObject(WebDriver driver) {
 		this.driver = driver;
-		this.logger = logger;
 	}
 	
 	protected void openUrl(String url) {

@@ -1,10 +1,12 @@
 package com.testvagrant.automation.codingassignment.webPages;
 
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-
+/**
+ * Hello world!
+ *
+ */
 public class HomePage extends BasePageObject{
 	
 	By popUpClose = By.xpath("//a[contains(@onclick, 'ndtvCloseThis')]");	
@@ -12,13 +14,12 @@ public class HomePage extends BasePageObject{
 	By weatherLink = By.linkText("WEATHER");
 	By cityList = By.xpath("//*[@id='messages']/div[*]/label");
 	
-	public HomePage(WebDriver driver, Logger logger) {
-		super(driver, logger);
+	public HomePage(WebDriver driver) {
+		super(driver);
 	}
 	
 	public HomePage openURL(String url)
 	{
-		logger.info("Open page URL: "+ url);
 		openUrl(url);
 		
 		return this;
